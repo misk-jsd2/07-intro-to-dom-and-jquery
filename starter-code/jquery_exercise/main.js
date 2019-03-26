@@ -12,12 +12,17 @@ You'll add the ability to complete tasks in your favorite things list:
 */
 
 function addToList($list, thing) {
-  var $thingLi = $('<li>');
+  //var $thingLi = $('<li>');
   // var newThingElement = `<li>${newThing}</li>`
-  $thingLi.text(thing);
-  $list.append($thingLi);
+  //$thingLi.text(thing);
+  //$list.append($thingLi);
   // $list.append(newThingElement);
-// $list.append(`<li>${newThing}</li>`);
+ $list.append(`<li>${thing} <a href="#">complete task</a> </li>`);
+  var $completed = $("a");
+  $completed.on('click', function(event){
+    event.preventDefault();
+    $(this).parent().css('text-decoration', 'line-through');
+  });
 }
 
   var $thingList = $('#fav-list');
