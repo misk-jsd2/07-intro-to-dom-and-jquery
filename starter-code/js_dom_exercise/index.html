@@ -18,5 +18,18 @@
     <input id="new-thing-button" type="submit" value="Create new thing"></submit>
   </form>
   <script src="main.js" type="text/javascript"></script>
+  <script>
+//Defining a listener for our button, specifically, an onclick handler
+document.getElementById("new-thing-button").onclick = function() {
+    //First things first, we need our text:
+    var text = document.getElementById("new-thing").value; //.value gets input values
+
+    //Now construct a quick list element
+    var li = "<li" + text + "</li>";
+
+    //Now use appendChild and add it to the list!
+    document.getElementById("fav-list").appendChild(li);
+  }
+</script>
 </body>
 </html>

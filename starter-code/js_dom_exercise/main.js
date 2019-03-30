@@ -16,7 +16,19 @@ function addToList(list, newThing) {
 
 window.onload = function() {
   // when someone clicks the button...
+document.getElementById("new-thing-button").onclick = function(event) {
+ event.preventDefault();
+ 	var node = document.createElement("LI");
+    var text = document.getElementById("new-thing").value;
+ 	var textnode = document.createTextNode(text);
+ 	node.appendChild(textnode);
 
+
+ //   var li = "<li>" + text + "</li>";
+
+    //Now use appendChild and add it to the list!
+    document.getElementById("fav-list").appendChild(node);
+  }
   // https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
 };
 
