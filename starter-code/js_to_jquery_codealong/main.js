@@ -7,7 +7,7 @@ function addToList(list, newThing) {
   newThingLi.appendChild(newThingText);
   list.appendChild(newThingLi);
 }
-
+  
 window.onload = function() {
   var button = document.getElementById('new-thing-button');
   var thingList = document.getElementById('fav-list');

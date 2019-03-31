@@ -16,6 +16,11 @@ function addToList($list, thing) {
   $thingLi.text(thing);
   $list.append($thingLi);
 }
+function completed($theList){
+  var completed2 = $('<span>').html(' complete task').addClass ('complete-task');
+  
+
+}
 
   var $thingList = $('#fav-list');
   var $button = $('#new-thing-button');
