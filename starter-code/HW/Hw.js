@@ -14,10 +14,9 @@ for (var i = 99; i >= 2; i--) {
 b = 'Take one down and pass it around, no more bottles of coke on the wall.\nNo more bottles of coke on the wall, no more bottles of coke.\nGo to the store and buy some more, 99 bottles of coke on the wall.'
 
   function myFunction() {
-  var node = document.createElement("LI");
+  var node1 = document.createElement("LI");
   event.preventDefault();
-  var textnode = document.createTextNode(a);
-  node.appendChild(textnode);
-  document.getElementById("Lyrics").appendChild(node);
-
-
+  var textnode1 = document.createTextNode(b);
+  node.appendChild(textnode1);
+  document.getElementById("Lyrics").appendChild(node1);
+}
