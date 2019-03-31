@@ -14,11 +14,14 @@ function addToList(list, newThing) {
 
 }
 
-window.onload = function() {
-  // when someone clicks the button...
+   window.onload = function() {
 
-  // https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
-};
+     // create a couple of elements in an empty HTML page
+     var main_heading = document.createElement("h1");
+     var heading_text = document.createTextNode("Hello dynamic world!");
+     main_heading.appendChild(heading_text);
+     document.body.appendChild(main_heading);
+  }
 
 /*
 
