@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>A Few of My Favorite Things</title>
+  <title> 99 </title>
 </head>
 <body>
   <h1>Hello World, Once More</h1>
 
-  <h2>Favorite Things</h2>
-  <ul id="fav-list">
-    <li class="fav-thing">Dog bites</li>
-    <li class="fav-thing">Bee Stings</li>
-    <li class="fav-thing">Feeling Bad</li>
-  </ul>
+  <script>
+var list = [];
+function dolist (){
 
-  <form>
-    <input id="new-thing" />
-    <input id="new-thing-button" type="submit" value="Create new thing"></submit>
-  </form>
+  for (var i=99, i>0;i--){
+    console.log("<li>"+list[i]+ "</li>")
+  }
+  $('#list').html();
+}
+
+  </script>
+
+  
 
   <script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>

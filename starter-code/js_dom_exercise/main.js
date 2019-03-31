@@ -16,8 +16,19 @@ function addToList(list, newThing) {
 
 window.onload = function() {
   // when someone clicks the button...
-
+    var main_heading = document.createElement("h1");
+     var heading_text = document.createTextNode("Hello dynamic world!");
+     main_heading.appendChild(heading_text);
+     document.body.appendChild(main_heading);
   // https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+ var helloElm= document.getElementById ('Hello');
+ helloElm.style.color ="red";
+
+ var campusesContainer = document.getElementById("gaCampuses");
+var gaCampuses = campusesContainer.getElementsByTagName("li");
+ for (var i = 0; i < gaCampuses.length; i++) {
+          gaCampuses[i].style.backgroundColor = "red";
+      }
 };
 
 /*
