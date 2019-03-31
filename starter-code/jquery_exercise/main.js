@@ -12,9 +12,10 @@ You'll add the ability to complete tasks in your favorite things list:
 */
 
 function addToList($list, thing) {
-  var $thingLi = $('<li>');
-  $thingLi.text(thing);
-  $list.append($thingLi);
+  // var $thingLi = $('<li>');
+  // $thingLi.text(thing);
+  // $list.append($thingLi);
+  list.append('<li>$(thing)</li>')
 }
 
   var $thingList = $('#fav-list');
@@ -30,4 +31,6 @@ function addToList($list, thing) {
       addToList($thingList, newThing);
       $newThingInput.val('');
     }
+    <li onclick="getPaging(this.id)" id="1">1</li>
+
   });

@@ -13,6 +13,8 @@ window.onload = function() {
   var thingList = document.getElementById('fav-list');
   var newThingInput = document.getElementById('new-thing');
 
+  var $button = $('#new-thing-button');
+
   button.onclick = function(event) {
     event.preventDefault();
     var newThing = newThingInput.value;
