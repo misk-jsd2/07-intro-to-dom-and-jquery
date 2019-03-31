@@ -11,10 +11,13 @@ You'll add the ability to complete tasks in your favorite things list:
 
 */
 
-function addToList($list, thing) {
+function addToList($list, thing, link) {
   var $thingLi = $('<li>');
+  var $links = $('<li>');
   $thingLi.text(thing);
   $list.append($thingLi);
+  $links.text(link);
+  $list.append($links);
 }
 
   var $thingList = $('#fav-list');
@@ -28,6 +31,6 @@ function addToList($list, thing) {
       alert('You must type in a value!');
     } else {
       addToList($thingList, newThing);
-      $newThingInput.val('');
+      $newThingInput.text('Hi');
     }
   });
