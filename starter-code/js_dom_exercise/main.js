@@ -15,11 +15,18 @@ function addToList(list, newThing) {
 }
 
 window.onload = function() {
-  // when someone clicks the button...
 
-  // https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+  var button = document.getElementById("new-thing-button");
+  button.onclick = function(){
+     event.preventDefault();
+     var node = document.getElementById("new-thing").value;
+  
 };
 
+
+
+
+}
 /*
 
 Bonus:
