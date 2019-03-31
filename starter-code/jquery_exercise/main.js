@@ -21,6 +21,8 @@ function addToList($list, thing) {
   var $button = $('#new-thing-button');
   var $newThingInput = $('#new-thing');
 
+  $thingLi.style.textDecoration = "line-through"
+
   $button.on('click', function(event) {
     event.preventDefault();
     var newThing = $newThingInput.val();
