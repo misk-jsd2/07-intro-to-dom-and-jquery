@@ -1,15 +1,19 @@
-/* Independent Practice
+// /* Independent Practice
 
-Making a favorites list: jQuery
+// Making a favorites list: jQuery
 
 
-You'll add the ability to complete tasks in your favorite things list:
+// You'll add the ability to complete tasks in your favorite things list:
 
-- Using jQuery, add a "complete task" link at the end of each to-do item (i.e. each "favorite thing")
-- When clicked, the link will cross out the current item (hint: add a class to the list that sets the text-decoration to line-through)
-- Each new item added by the user needs to also have the "complete task" link at the end
+// - Using jQuery, add a "complete task" link at the end of each to-do item (i.e. each "favorite thing")
+// - When clicked, the link will cross out the current item (hint: add a class to the list that sets the text-decoration to line-through)
+// - Each new item added by the user needs to also have the "complete task" link at the end
 
-*/
+// */
+
+
+ 
+
 
 function addToList($list, thing) {
   var $thingLi = $('<li>');
@@ -20,7 +24,6 @@ function addToList($list, thing) {
   var $thingList = $('#fav-list');
   var $button = $('#new-thing-button');
   var $newThingInput = $('#new-thing');
-
   $button.on('click', function(event) {
     event.preventDefault();
     var newThing = $newThingInput.val();
