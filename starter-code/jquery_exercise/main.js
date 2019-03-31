@@ -20,6 +20,14 @@ function addToList($list, thing) {
   var $thingList = $('#fav-list');
   var $button = $('#new-thing-button');
   var $newThingInput = $('#new-thing');
+  var $thingsArray = $('.fav-thing')
+  // add complete link
+  for (let index = 0; index <$thingsArray.length; index++) {
+    console.log($thingsArray[index])
+    let btn = `<a>${$($thingsArray[index]).html()}</a>`
+     $($thingsArray[index]).html(btn);    
+  }
+
 
   $button.on('click', function(event) {
     event.preventDefault();

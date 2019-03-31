@@ -12,12 +12,28 @@ Making a favorites list: DOM manipulation
 
 function addToList(list, newThing) {
 
+  let li = document.createElement('li')
+  li.appendChild(newThing);
+  list.appendChild(li);
 }
-
 window.onload = function() {
-  // when someone clicks the button...
 
-  // https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+  var formInput = document.getElementById('new-thing');
+  var favUl = document.getElementById('fav-list');
+  var formButton = document.getElementById('new-thing-button');
+
+  formButton.onclick = (e) =>{
+    e.preventDefault();
+    if(formInput.value==""){
+      alert('you must type in a value!')
+    }else{
+
+      let li_text = document.createTextNode(formInput.value);
+      addToList(favUl,li_text)
+      formInput.value = "";
+    }
+  }
+   
 };
 
 /*
