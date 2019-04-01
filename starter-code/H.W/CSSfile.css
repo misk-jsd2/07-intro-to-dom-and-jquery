@@ -1,0 +1,21 @@
+body {
+  	background-color: black;
+}
+
+h1{
+  	text-align: center;
+  	color: red;
+  	border-bottom: 1px solid white;
+	padding-bottom: 5px;
+}
+
+h3{
+	text-align: center;
+  	color: white;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
