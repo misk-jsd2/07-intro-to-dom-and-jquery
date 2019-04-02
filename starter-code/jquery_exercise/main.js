@@ -15,11 +15,15 @@ function addToList($list, thing) {
   var $thingLi = $('<li>');
   $thingLi.text(thing);
   $list.append($thingLi);
+  console.log($completeT);
 }
 
   var $thingList = $('#fav-list');
   var $button = $('#new-thing-button');
   var $newThingInput = $('#new-thing');
+  var $completeT = $('complete task');
+
+
 
   $button.on('click', function(event) {
     event.preventDefault();
@@ -31,3 +35,4 @@ function addToList($list, thing) {
       $newThingInput.val('');
     }
   });
+
