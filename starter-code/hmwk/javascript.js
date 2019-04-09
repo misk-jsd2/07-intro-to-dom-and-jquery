@@ -1,5 +1,5 @@
 function addToList(lists, New) {
-    var lists = document.createElement('li');
+    var lists = document.createElement('ol');
     var list_value = document.createTextNode(New);
     lists.appendChild(list_value);
     document.body.appendChild(lists);
@@ -20,11 +20,11 @@ function addToList(lists, New) {
         }
         if (i>2) {
             var J=(i + ' bottles of coke on the wall, '+ i +' bottles of coke. Take one down and pass it around, '+ (i-1) +' bottles of coke on the wall.')
-            var main_list = document.getElementById("lyrics");
+            var main_list = document.getElementById("song");
             addToList(main_list,J);
         }
     }
-    var main_list = document.getElementById("lyrics");
+    var main_list = document.getElementById("song");
     addToList(main_list,Z);
     addToList(main_list,Y);
     addToList(main_list,X);
